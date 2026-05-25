@@ -6,11 +6,31 @@
     <title>cadastro </title>
 </head>
 <body>
+
+<main>
+    <?php include "inc-menu.php"; ?>
+    <nav>
+        <a href="admin.php">Voltar</a>
+        <a href="discografia-fomrulario.php">Discografia</a>
+        <a href="discografia-fomrulario.php">Discografia</a>
+        <a href="discografia-fomrulario.php">Discografia</a>
+        <a href="discografia-fomrulario.php">Discografia</a>
+    </nav>
+
+    <h1> SpotiFy</h1>
+
+    <div>
+        <div>
+            <a href="discografia-formulario.php ">Nova Discografia</a>
+        </div>
+    </div>
+
+</main>
    <div class="" style="border: 1px solid red;"  >
         <h1 class="">Cadastro de discografia</h1>
         <form action="discografia_salvar.php" method ="post">
-            <label for="">Artista</label>
-            <input type="text" name ="artista">
+            <label for="">nome Artista</label>
+            <input type="text" name ="nomeArtista">
             <br>
             <label for="">Nome do Album</label>
             <input type="text" name = "nomeAlbum">
@@ -28,7 +48,7 @@
             </select>
             <br>
             <label for="">foto</label>
-            <input type="type" name ="foto">
+            <input type="type" name ="fotoAlbum">
             <br>
            
 
