@@ -11,7 +11,8 @@ echo"$nomeArtista, $nomeAlbum, $anoLancamento, $tipo, $fotoAlbum";
 #abri conexao
 
 $conexao = mysqli_connect("localhost","root","","db_sportify");
-if ($conexao) {
+if (!$conexao) {
+    die ("<h1>erro<h1>". mysqli_connect_error());
 }
 
 #inserir os dados
