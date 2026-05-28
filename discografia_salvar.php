@@ -8,7 +8,7 @@ $fotoAlbum = $_POST["fotoAlbum"];
 
 echo"$nomeArtista, $nomeAlbum, $anoLancamento, $tipo, $fotoAlbum";
 
-#abri conexao
+/*abri conexao*/ 
 
 $conexao = mysqli_connect("localhost","root","","db_sportify");
 if (!$conexao) {
@@ -18,7 +18,7 @@ if (!$conexao) {
 #inserir os dados
 
 $slq = "insert into tb_discografia (nomeArtista, nomeAlbum, anoLancamento, tipo, fotoAlbum)
-values ('$nomeArtista','$nomeAlbum' ,'$anoLancamento', '$tipo', '$fotoAlbum' )";
+values   ('$nomeArtista','$nomeAlbum' ,'$anoLancamento', '$tipo', '$fotoAlbum' )";
 
 
 $resultado = mysqli_query($conexao , $slq);

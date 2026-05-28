@@ -36,10 +36,15 @@ include "inc-menu.php"
 
     while($linha_resultado = mysqli_fetch_array($result))
         {
+            
             echo"<tr>";
             echo "<td> {$linha_resultado['id_tb_discografia']} <td>";
             echo "<td> {$linha_resultado['nomeArtista']} <td>";
-            echo "<td> {$linha_resultado['nomeAlbum']} <td>";
+            echo "<td> <a href ='discografia-visualizar.php?id={$linha_resultado['id_tb_discografia']}'>
+            
+            
+
+             {$linha_resultado['nomeAlbum']} <td>";
             echo "<td> {$linha_resultado['anoLancamento']} <td>";
             echo "<td> {$linha_resultado['tipo']} <td>";
             echo "<td> {$linha_resultado['fotoAlbum']} <td>";
