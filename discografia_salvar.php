@@ -21,7 +21,7 @@ $slq = "insert into tb_discografia (nomeArtista, nomeAlbum, anoLancamento, tipo,
 values   ('$nomeArtista','$nomeAlbum' ,'$anoLancamento', '$tipo', '$fotoAlbum' )";
 
 
-$resultado = mysqli_query($conexao , $slq);
+$resultado = mysqli_query($conexao ,$slq);
 
 if ($resultado){
     echo "cadastro com sucesso";

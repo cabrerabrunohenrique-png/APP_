@@ -15,24 +15,26 @@ include "inc-menu.php"
 
 <table>
     <tr>
+        <td>id</td>
         <td>nomeArtista</td>
         <td>nomeAlbum</td>
         <td>anoLancamento</td>
         <td>tipo</td>
         <td>fotoAlbum</td>
+        <td>acao</td>
     </tr>
 
-    #abri conexao
+    <!--abri conexao -->
     <?php
     include "inc-conexao.php";
     
-    #consultar os dados
+    //consultar os dados//
 
     $sql = "select * from tb_discografia order by nomeArtista, anoLancamento";
     $result = mysqli_query($conexao, $sql);
 
 
-    #lista os dados
+    //lista os dados//
 
     while($linha_resultado = mysqli_fetch_array($result))
         {
@@ -41,13 +43,20 @@ include "inc-menu.php"
             echo "<td> {$linha_resultado['id_tb_discografia']} <td>";
             echo "<td> {$linha_resultado['nomeArtista']} <td>";
             echo "<td> <a href ='discografia-visualizar.php?id={$linha_resultado['id_tb_discografia']}'>
+            Visualizar
+            </a> <td>";
             
             
 
-             {$linha_resultado['nomeAlbum']} <td>";
+             echo "<td> {$linha_resultado['nomeAlbum']} <td>";
             echo "<td> {$linha_resultado['anoLancamento']} <td>";
             echo "<td> {$linha_resultado['tipo']} <td>";
-            echo "<td> {$linha_resultado['fotoAlbum']} <td>";
+             echo "<td>
+                    <a href ='discografia-editar.php?id={$linha_resultado['id_tb_discografia']}'>editar
+                    </a> <br>";
+            
+            echo "<td> <a href ='discografia-excluir.php? id ={$linha_resultado['id_tb_discografia']}>escluir
+                </a>";
             echo "</td>";
         }
 

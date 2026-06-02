@@ -10,13 +10,7 @@
 <main>
     
 <?php include "inc-menu.php"; ?>
-<nav>
-        <a href="admin.php">adm</a>
-        <a href="discografia-fomrulario.php">Discografia</a>
-        <a href="discografia-fomrulario.php">Discografia</a>
-        <a href="discografia-fomrulario.php">Discografia</a>
-         <a href="discografia-fomrulario.php">Discografia</a>
-    </nav>
+
 
     <h1> SpotiFy</h1>
 
