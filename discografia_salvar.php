@@ -1,12 +1,12 @@
 <?php
 
-$nomeArtista = $_POST["nomeArtista"];
-$nomeAlbum = $_POST["nomeAlbum"];
-$anoLancamento = $_POST["anoLancamento"];
+$nome = $_POST["nome"];
+$album = $_POST["album"];
+$ano = $_POST["ano"];
 $tipo = $_POST["tipo"];
-$fotoAlbum = $_POST["fotoAlbum"];
+$foto = $_POST["foto"];
 
-echo"$nomeArtista, $nomeAlbum, $anoLancamento, $tipo, $fotoAlbum";
+echo"$nome $album $ano $tipo $foto";
 
 /*abri conexao*/ 
 
@@ -18,7 +18,7 @@ if (!$conexao) {
 #inserir os dados
 
 $slq = "insert into tb_discografia (nomeArtista, nomeAlbum, anoLancamento, tipo, fotoAlbum)
-values   ('$nomeArtista','$nomeAlbum' ,'$anoLancamento', '$tipo', '$fotoAlbum' )";
+values   ('$nome','$album' ,'$ano', '$tipo', '$foto' )";
 
 
 $resultado = mysqli_query($conexao ,$slq);

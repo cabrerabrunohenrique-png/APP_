@@ -24,13 +24,13 @@
         <h1 class="">Cadastro de discografia</h1>
         <form action="discografia_salvar.php" method ="post">
             <label for="">nome Artista</label>
-            <input type="text" name ="nomeArtista">
+            <input type="text" name="nome">
             <br>
             <label for="">Nome do Album</label>
-            <input type="text" name = "nomeAlbum">
+            <input type="text" name="album">
             <br>
             <label for="">Ano Lancamento</label>
-            <input type="number" name ="anoLancamento">
+            <input type="number" name="ano">
             <br>
 
             <label for="">tipo</label>
@@ -42,13 +42,13 @@
             </select>
             <br>
             <label for="">foto</label>
-            <input type="type" name ="fotoAlbum">
+            <input type="text" name ="foto">
             <br>
            
 
 
             <button type="submit">enviar</button>
-            <button type="submit">limpar</button>
+            <button type="reset">limpar</button>
         </form>
 
 

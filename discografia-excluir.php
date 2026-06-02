@@ -4,14 +4,14 @@ $id = $_GET["id"];
 
 include "inc-conexao.php";
 
-$sql = "delete from tb_discografia where id = {$id}";
+$sql = "delete from tb_discografia where id_tb_discografia = {$id}";
 
 
 $resultado = mysqli_query($conexao,$sql);
 
 mysqli_close($conexao);
 
-header('discografia_listagem.php');
+header('Location:discografia_listagem.php');
 
 
 ?>

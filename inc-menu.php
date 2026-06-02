@@ -1,7 +1,16 @@
- <nav class="container text-center">
-        <a href="admin.php">Adm</a>
-        <a href="">Discografia</a>
-        <a href="">Artistas</a>
-        <a href="">Musicas</a>
-        <a href="">Gravadora</a>
-    </nav>
+<nav class="  container">
+    <div class="row  flex-row-reverse " style="border: 3px solid blue" >
+        <div class ="col" >
+            <a class="flex-row-reverse"  href="admin.php">Adm</a>
+        </div>
+        <div class ="col">
+            <a href="discografia_salvar.php" >Discografia</a>
+        </div>
+        <div class ="col">
+            <a href="discografia_listagem.php">Listagem</a>
+        </div>
+        <div class="col">
+            <a href="discografia-formulario.php">formulario</a>
+        </div>
+    </div>
+</nav>
