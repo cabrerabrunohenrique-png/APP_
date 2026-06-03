@@ -3,9 +3,7 @@
         <div class ="col" >
             <a class="flex-row-reverse"  href="admin.php">Adm</a>
         </div>
-        <div class ="col">
-            <a href="discografia_salvar.php" >Discografia</a>
-        </div>
+        
         <div class ="col">
             <a href="discografia_listagem.php">Listagem</a>
         </div>

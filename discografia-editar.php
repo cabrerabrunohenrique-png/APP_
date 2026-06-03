@@ -29,18 +29,20 @@ include('inc-menu.php');
     <div class ="d-flex shadow bg-white rounded-4">
         <h1 >Editar disco <?=$nome?></h1>
     </div>
-    <form method ="post" action="discografia-visualizar.php?id=<?=$id?>">
+    <form method ="post" action="discografia-atualizar.php?id=<?=$id?>">
     
     <div class="container shadow ">
         <label>Artista:</label>     
-        <input name ="artista" value = "<?=$nome?>"> <br>
+        <input name ="nome" value = "<?=$nome?>"> <br>
+
         <label for="">nome do album :</label>
-        <input name ="nome" value = "<?=$artista?>"> <br>
+        <input name ="artista" value = "<?=$artista?>"> <br>
+
         <label for="">ano Lancamento</label>
         <input  type ="number" name ="ano" value ="<?=$ano?>"> <br>
         <label for="">tipo:</label>
         <select name="tipo" id="">
-            <option value="album" <?php if($tipo =='ambum'){echo 'selected';} ?>>album</option>
+            <option value="album" <?php if($tipo =='album'){echo 'selected';} ?>>album</option>
             <option value="single"<?php if($tipo == 'single'){echo 'selected';}?>>single</option>
         </select>
         <label for="">foto</label>   
