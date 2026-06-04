@@ -10,5 +10,8 @@
         <div class="col">
             <a href="discografia-formulario.php">formulario</a>
         </div>
+        <div class="col">
+            <a href="index.php">index</a>
+        </div>
     </div>
 </nav>
