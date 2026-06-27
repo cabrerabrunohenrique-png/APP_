@@ -1,19 +1,19 @@
 <?php
 $titulo_da_pagina = "discografia";
 include "inc-head.php";
+
 ?>
-<hr >
 <body>
 <?php
 include "inc-menu.php"
 ?>
 
 <main class = "container">
-    <hr>
+    
 
     <a href="discografia-formulario.php">Nova Discografia</a>
 
-    <hr>
+    
 
     <table class="table ">
         <tr>

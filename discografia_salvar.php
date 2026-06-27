@@ -6,7 +6,6 @@ $ano = $_POST["ano"];
 $tipo = $_POST["tipo"];
 $foto = $_POST["foto"];
 
-echo"$nome $album $ano $tipo $foto";
 
 /*abri conexao*/ 
 
@@ -23,8 +22,11 @@ values   ('$nome','$album' ,'$ano', '$tipo', '$foto' )";
 
 $resultado = mysqli_query($conexao ,$slq);
 
-if ($resultado){
-    echo "cadastro com sucesso";
+if ($resultado) {
+    // Se deu certo, redireciona IMEDIATAMENTE
+    header('Location: discografia_listagem.php');
+    exit; // Esse 'exit' é obrigatório para a página parar aqui e o redirecionamento funcionar
+    
 }
 else {
     echo "Deu algum problema";

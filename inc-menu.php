@@ -1,17 +1,18 @@
-<nav class="  container">
-    <div class="row  flex-row-reverse " style="border: 3px solid blue" >
-        <div class ="col" >
-            <a class="flex-row-reverse"  href="admin.php">Adm</a>
+<nav class=" bungee-spice-regular container d-flex" style="">
+    <div class="col-2" style="" >
+            <a class="btn btn-primary"  href="admin.php" style="" >Inicio Pagina</a>
         </div>
         
-        <div class ="col">
-            <a href="discografia_listagem.php">Listagem</a>
+        <div class="col-2" style="">
+            <a class='btn btn-warning' href="discografia_listagem.php" style="">Lista de musicas</a>
         </div>
-        <div class="col">
-            <a href="discografia-formulario.php">formulario</a>
+        <div style="display: flex; justify-content: center;"  class="col-6  ">
+            <a class='btn btn-success ' href="discografia-formulario.php">Formulario para cadastro de musicas</a>
         </div>
-        <div class="col">
-            <a href="index.php">index</a>
+         <div class="col-2" style="">
+            <a class="btn btn-info" href="index.php" style="" >Discografia </a>
         </div>
-    </div>
+</div>
+
+
 </nav>
